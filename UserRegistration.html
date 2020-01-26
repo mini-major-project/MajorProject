@@ -92,7 +92,7 @@
 		<table>
 			<tr>
 				<td>Name:</td>
-				<td><input type="text" name="wname" required></td>
+				<td><input type="text" name="username" required></td>
 			</tr>
 			<tr>
 				<td>Mail ID:</td>
@@ -104,11 +104,20 @@
 			</tr>
 			<tr>
 				<td>Phone Number:</td>
-				<td><input type="text" name="wphone" required></td>
+				<td><input type="text" name="userphone" required></td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td><textarea type="text" name="userAddress" placeholder="Enter Address" style="height:60px;width:200px" required></textarea></td>
+			</tr>
+			<tr>
+				<td>PinCode:</td>
+				<td><input type="text" name="userPinCode" placeholder="Enter Pin Code" id="userPinCode" onkeyup="validatePinCode(document.getElementById('userPinCode').value)" required></label>
+                &nbsp;<span style="color:red;font-size:smaller" id="pinCodeValidation"></span> <br></td>
 			</tr>
 			<tr>
 				<td>Set Password:</td>
-				<td><input type="password" name="wPswd"
+				<td><input type="password" name="userPswd"
 					placeholder="Enter Password" id="userPswd"
 					onkeyup="validatePassword(document.getElementById('userPswd').value)"
 					required> &nbsp;<span
